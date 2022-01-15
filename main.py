@@ -132,7 +132,7 @@ async def play(ctx, channel='🔊only-songs1'):
  #joining the desired channel
   voice = discord.utils.get(bot.voice_clients, guild=ctx.guild) 
   # channel = discord.utils.get(ctx.guild.voice_channels, name=channel)
-  channel = bot.get_channel(927962396167909447)
+  channel = bot.get_channel(#your audio channel to bound it to one channel)
   if voice == None:
     await ctx.send(f"Joined **{channel}**")
   else:
