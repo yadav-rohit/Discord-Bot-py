@@ -55,23 +55,13 @@ async def anc(ctx):
     def check(ttle):
         return msg.author == ctx.author and msg.channel == ctx.channel 
     ttle = await bot.wait_for("message", check=check)
-    channel = bot.get_channel(927959867879219200) 
+    channel = bot.get_channel('#enter your anouncment channel id here') 
     
     # await channel.send(f'{ctx.message.guild.default_role} {msg.content}')
     embed=discord.Embed(title=f"{ttle.content}", description=f"{msg.content}", color=53380)
     await channel.send(f'{ctx.message.guild.default_role}')
     await channel.send(embed=embed)    
 
-# @Zen.event
-# async def on_message(message):
-#     # we do not want the bot to reply to itself
-#     if message.author.id == Zen.user.id:
-#         return
-
-#     if message.content.startswith('hello'):
-#         await message.reply('Hello! , This is Zen Modder Bot , How can i help you!', mention_author=True)
-
-# embed creation
 
 #music code
 song_played=[]
